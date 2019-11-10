@@ -84,5 +84,5 @@ theme: icarus
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://gh_token@github.com:raighneweng/raighneweng.github.io.git
-  repo: master
+  repo: https://gh_token@github.com/raighneweng/raighneweng.github.io.git
+  branch: master

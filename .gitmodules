@@ -1,0 +1,3 @@
+[submodule "themes/icaruss"]
+	path = themes/icaruss
+	url = git@github.com:raighneweng/hexo-theme-icarus.git

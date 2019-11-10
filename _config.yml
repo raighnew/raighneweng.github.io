@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: icarus
+theme: icaruss
 
 # Disqus
 # disqus_shortname: raighnewengblog

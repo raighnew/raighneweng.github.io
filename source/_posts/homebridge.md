@@ -25,8 +25,8 @@ banner:
 <center>![](/images/usr02.jpeg)</center>
 
 踩雷点:
-1: 一定要看附送的使用手册，U2 是输出端口，美的、格力使用 U2 作为输入端口，大金和其他使用 U3
+1: 一定要看附送的使用手册，U1 是输出端口，美的、格力使用 U2 作为输入端口，大金和其他使用 U3
 2: 信号线 AB 要区分
-3: 建议先使用 USB 转 RS232 模块先用 modbuspoll 调试通过
+3: 建议先使用 USB 转 RS232 模块先用 modbuspoll 通过 COM 端口调试
 4: 有人转接模块工作模式应该是透传
 5: modbuspoll 测试有人模块时时应该使用 modbus RTU over TCP 测试

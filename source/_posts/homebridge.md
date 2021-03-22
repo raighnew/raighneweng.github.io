@@ -20,9 +20,10 @@ banner:
 
 我这里重点贴一下有人模块的配置。
 
-<center>![](/images/usr01.jpeg)</center>
-<center>![](/images/usr03.jpeg)</center>
-<center>![](/images/usr02.jpeg)</center>
+![](/images/usr01.jpeg)
+
+![](/images/usr03.jpeg)
+![](/images/usr02.jpeg)
 
 踩雷点:
 1: 一定要看附送的使用手册，U1 是输出端口，美的、格力使用 U2 作为输入端口，大金和其他使用 U3

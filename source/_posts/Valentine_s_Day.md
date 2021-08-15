@@ -1,7 +1,7 @@
 title: 情人节的时候，我在想爷爷 
 date: 2015-02-14 18:33:01
-categories: 2015
-tags: [亲情]
+categories: thinking
+tags: [thinking]
 ---
 今天是情人节啊，大家情人节快乐啊！你们应该都在电影院陪对象呢吧，我呢，我情人节在医院，是啊，医院。
 <!--more-->

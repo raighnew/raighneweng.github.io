@@ -1,10 +1,10 @@
 title: 计算机网络要点
 toc: true
 date: 2016-04-13 23:25:06
-categories: 学习
+categories: Coding
 thumbnail:
 banner:
-tags: [学习, 计算机]
+tags: [Coding, IT]
 ---
 ### OSI，TCP/IP，五层协议的体系结构，以及各层协议
 OSI分层 （7层）：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。   

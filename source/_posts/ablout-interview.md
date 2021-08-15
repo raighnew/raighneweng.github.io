@@ -1,8 +1,8 @@
 title: 近日面试总结
 toc: false
-tags: [面试, 职业]
+tags: [IT]
 date: 2016-10-01 18:15:34
-categories: 职业
+categories: Life
 thumbnail:
 banner:
 ---

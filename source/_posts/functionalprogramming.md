@@ -1,8 +1,8 @@
 title: 函数式编程学习笔记
 date: 2015-08-29 14:16:20
-categories: 编程
+categories: Coding
 thumbnail: /images/whatfuckiamreading.jpg
-tags: [编程]
+tags: [Coding,IT]
 ---
 最近学习的道路上遇到了函数式编程（functional programming），教材充斥着无比枯燥的教科书语言：干涩，难懂。看书的时候心情简直如下图所示：它母亲的怎么就那么难学？好在网上的程序员大牛太多，本着开源分享的精神写了很多教材，使我收益良多，特地总结在这里。
 

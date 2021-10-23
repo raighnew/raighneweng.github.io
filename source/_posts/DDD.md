@@ -5,7 +5,7 @@ tags: [IT, Coding]
 categories: Coding
 ---
 
-各层之间是松散链接的，依赖关系只能是单向的，上层调用下层的公共接口。TEST
+各层之间是松散链接的，依赖关系只能是单向的，上层调用下层的公共接口。
 <!--more-->
 
 ### 1 Entity 和 Value Object

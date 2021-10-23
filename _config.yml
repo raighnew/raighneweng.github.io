@@ -63,7 +63,7 @@ theme: icarus
 deploy:
   type: git
   repo: git@github.com:raighneweng/raighneweng.github.io.git
-  branch: master
+  branch: hexo
 
 feed:
   enable: true

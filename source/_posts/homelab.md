@@ -6,6 +6,8 @@ categories: Home
 cover: /images/unifi_dashboard.png
 ---
 经常逛论坛，很早就心水了Ubnt AC+AP全家桶的便捷，然而第一套房子装修的时候并没有预留网线，现在又旅居蓉城，想的是装修第二套房子的时候再购买Ubnt全家桶。
+<!--more-->
+
 现在出租屋的网络架构是R2S *(前同事离职前给我的福利，200的价格收了一套金属壳的R2S，还送了一张C10的卡)* +K2P，R2S当主路由经常会因为passwall挂了整个网络都跟着挂，诟病很久了，但一直拖着没有升级，压倒骆驼的最后一根稻草是上周是领导1:1视频会议，我的网络挂了十分钟才恢复。不得已把网络升级计划提上日程。
 
 可能是疫情的关系，这几年UBNT的设备升级很慢，选购AP的时候看论坛里反馈U6-Pro好像有BUG，所以先选购U6-Lite，等新房子装修好U6-Lite放主卧，再购买U6-Pro放客厅用。网关和交换机选购的时候一度想购买UDM-PRO，但是UDM-PRO没有POE+电源，购买之后还需要购买POE+的交换机。(*看欧洲官网，有一款[UMD-PRO-SE](https://eu.store.ui.com/products/dream-machine-pro-se-ea?variant=40354517844150)在早期测试，带POE+电源，真是真正的Dream Machine*)

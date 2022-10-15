@@ -1,7 +1,8 @@
 ---
 title: 润to新加坡
 date: 2022-07-31 20:17:54
-tags:
+categories: Life
+tags: [Life]
 ---
 
 6 月 07 号 ----- 签约 Offer

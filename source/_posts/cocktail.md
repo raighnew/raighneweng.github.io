@@ -1,8 +1,8 @@
 ---
 title: 惊呼“原来这样啊” -《鸡尾酒法典》读手感
 toc: true
-tags: [wine]
-categories: wine
+tags: [Wine]
+categories: Wine
 date: 2020-12-08 20:41:02
 cover: /images/IMG_0771.jpeg
 thumbnail: /images/IMG_0771.jpeg

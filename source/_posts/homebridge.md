@@ -2,7 +2,7 @@
 title: 大金ModBus模块homebridge
 toc: true
 tags: [智能家居]
-categories: Home
+categories: HomeLab
 date: 2021-02-06 13:48:10
 thumbnail:
 banner:

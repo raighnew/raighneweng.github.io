@@ -1,8 +1,8 @@
+---
 title: 一个全新的开始
 date: 2014-12-26 17:34:03
-categories: Memory
-tags: [Memory]
-
+categories: Life
+tags: [Life]
 ---
 
 辛苦到现在，终于把个人博客搭建好了，虽然还有很多东西需要去完善，但这标志着一个新的开始。

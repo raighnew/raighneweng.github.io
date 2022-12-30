@@ -1,3 +1,4 @@
+---
 title: Anatomy of an HTTP Transaction 翻译
 toc: true
 date: 2016-09-21 20:38:05
@@ -5,7 +6,6 @@ categories: Coding
 thumbnail: /images/nodejs-logo.png
 banner: /images/nodejs-logo.png
 tags: [Nodejs, JavaScript]
-
 ---
 
 # 前言

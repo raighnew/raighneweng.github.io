@@ -107,10 +107,10 @@ widgets:
     type: subscribe_email
     description:
     feedburner_id: RaighnesBlog
-  - position: left
-    type: adsense
-    client_id: ca-pub-2410395661948138
-    slot_id: 1274867073
+  # - position: left
+  #   type: adsense
+  #   client_id: ca-pub-2410395661948138
+  #   slot_id: 1274867073
 plugins:
   animejs: true
   back_to_top: true

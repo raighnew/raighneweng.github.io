@@ -1,11 +1,11 @@
 ---
-title: Best Let's Encrypt Manager for GKE Autopilot 
+title: Best Let's Encrypt Manager for Kong + GKE Autopilot 
 date: 2023-09-10 09:37:37
 categories: Backend
-tags: [GKE, Kubernetes]
+tags: [GKE, Kubernetes, Kong]
 ---
 
-In this article, I will not delve into the basics of TLS/SSL and how SSL works. Instead, I will focus on why I choose to use Let's Encrypt and how to set up automatic renewal for it in Google Kubernetes Engine (GKE) Autopilot.
+In this article, I will not delve into the basics of TLS/SSL and how SSL works. Additionally, if you are using GKE default ingress, you also may not encounter this issue. Instead, I will focus on why I chose to use Let's Encrypt and how to set up automatic renewal for it in Google Kubernetes Engine (GKE) Autopilot and third-party ingress using Kong.
 
 <!--more-->
 

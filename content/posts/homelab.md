@@ -4,7 +4,7 @@ date =  '2022-01-03T20:51:53'
 tags =  ['智能家居', 'ubnt', 'unifi']
 +++
 
-![](/unifi_dashboard.png)
+![](/images/unifi_dashboard.png)
 
 经常逛论坛，很早就心水了 Ubnt AC+AP 全家桶的便捷，然而第一套房子装修的时候并没有预留网线，现在又旅居蓉城，想的是装修第二套房子的时候再购买 Ubnt 全家桶。
 
@@ -31,7 +31,7 @@ tags =  ['智能家居', 'ubnt', 'unifi']
 - AC 里的 WAN 默认网关也是 192.168.1.1，需要你修改后再采用 USG，不然 USG 的设置会被修改，然后陷入死循环。
 
 最后贴几张我的配置图。
-![](/network_setting.png)
-![](/wifi_setting.png)
+![](/images/network_setting.png)
+![](/images/wifi_setting.png)
 
 使用了快一周了，UBNT 真好。

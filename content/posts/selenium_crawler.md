@@ -10,7 +10,7 @@ date =  '2018-03-16T14:22:08+08:00'
 
 # 知乎话题结构
 
-![zhihu_topic.png](/zhihu_topic.png)
+![zhihu_topic.png](/images/zhihu_topic.png)
 首先看一下知乎的话题结构，典型的网状结构，一个话题节点，有多个父节点多个子节点。
 
 # 思路
@@ -246,7 +246,7 @@ CREATE TABLE `zhihu_topic_link` (
 
 # Echart数据可视化
 
-![zhihu_echart.png](/zhihu_echart.png)
+![zhihu_echart.png](/images/zhihu_echart.png)
 使用了Echart的力导向图，作为前端展示，需要注意的是每个node节点的id是不能重复的，一定要对数据做好去重工作。
 
 # 修改默认递归深度

@@ -1,5 +1,4 @@
 baseURL = '/'
-languageCode = 'en-us'
 title = "Raighne's Blog"
 theme = "paper"
 
@@ -13,4 +12,4 @@ theme = "paper"
   # header social icons
   github = 'raighneweng'                 
   mastodon = 'https://mastodon.social/@raighne'         
-  rss = true                                
+  rss = true

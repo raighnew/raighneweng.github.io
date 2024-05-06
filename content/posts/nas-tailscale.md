@@ -1,10 +1,10 @@
 +++
-title = '使用Tailscale Funnel 实现内网穿透'
+title = 'TailScale Funnel 实现内网穿透'
 date  = '2023-06-25T10:09:17+08:00'
 tags  = ['NAS']
 +++
 
-前段时间网络上一篇 tailscale 的技术[博文](https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp)相当火热，讲述了 tailscale 如何在各种情况下实现打洞，干货满满，全是技术点。本来 QNAP 自带的 myqnapcloud 也够用了，但是被 tailscale 的博文吸引，准备在 NAS 上试用一下。
+前段时间网络上一篇 TailScale 的技术[博文](https://tailscale.com/blog/how-tailscale-works/#encrypted-tcp-relays-derp)相当火热，讲述了 TailScale 如何在各种情况下实现打洞，干货满满，全是技术点。本来 QNAP 自带的 myqnapcloud 也够用了，但是被 TailScale 的博文吸引，准备在 NAS 上试用一下。
 
 <!--more-->
 ## 前期准备
@@ -46,6 +46,14 @@ tailscale serve https / http://127.0.0.1:xxx
 tailscale funnel 443 on
 
 # 查看 funnel 状态
+tailscale funnel status
+```
+
+#### Updates After 1.64.0
+```bash
+tailscale funnel --bg --https 443 target_port
+
+# Check funnel status
 tailscale funnel status
 ```
 

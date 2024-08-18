@@ -1,6 +1,7 @@
 +++
 title = 'Why I Quit My Job In Two Weeks'
 date = '2024-07-09T11:27:00+08:00'
+draft = true
 +++
 
 I joined a company as a Senior Backend Developer last month but decided to leave two weeks later. Here’s what I found during those two weeks.
@@ -73,7 +74,7 @@ However, during the discussion, it became evident that the organization was eith
 
 Given these factors, I made the decision to leave the company. While it wasn’t an easy choice, I knew it was the right one for my professional integrity and growth.
 
-    - Hope is not strategy.
+        - Hope is not strategy.
 
 ### How to Avoid This Situation in the Future
 

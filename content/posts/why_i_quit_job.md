@@ -12,42 +12,41 @@ Note: This article is an example of mistakes we may encounter in development. It
 
 ### The Awful Boilerplate
 
-The IT department has around 20 people, most of whom are Backend Developers. On my first day, I received read access to the Backend Boilerplate. After opening and reading the `index.ts` file, my first thought was, “This is messed up.”
+The infra department has around 20 people, most of whom are Backend Developers. On my first day, I received read access to the Backend Boilerplate. After opening and reading the `index.ts` file, my first thought was, “This is messed up.”
 
 1. Global Instances and Numerous Environment Codes
 
-    The codebase initializes all class instances in the `index.ts` file and passes those instances into routes/handlers via parameters. Consequently, there are numerous environment initialization codes in the main file. I have concerns about global instances for the following reasons:
-    
-    - We should avoid having thousands of lines of code in one function. It overloads the mental model and ideally, we should keep each function under 20 lines.
+   The codebase initializes all class instances in the `index.ts` file and passes those instances into routes/handlers via parameters. Consequently, there are numerous environment initialization codes in the main file. I have concerns about global instances for the following reasons:
 
-    - Global instances or environments lead to tight coupling. In large projects, you may not know if other team members modify them in the future.
+   - We should avoid having thousands of lines of code in one function. It overloads the mental model and ideally, we should keep each function under 20 lines.
 
-    - It’s better to move all environment checks to the class constructor to improve cohesion, rather than placing them before the creation.
+   - Global instances or environments lead to tight coupling. In large projects, you may not know if other team members modify them in the future.
+
+   - It’s better to move all environment checks to the class constructor to improve cohesion, rather than placing them before the creation.
 
 2. No Unit Tests
 
-    I know not all developers enjoy writing unit tests, but if our codebase involves a lot of calculations, unit tests are essential to ensure the code doesn’t break during refactoring.
+   I know not all developers enjoy writing unit tests, but if our codebase involves a lot of calculations, unit tests are essential to ensure the code doesn’t break during refactoring.
 
-    - TypeScript provides static type checking, but we still need unit tests to test runtime verification.
+   - TypeScript provides static type checking, but we still need unit tests to test runtime verification.
 
-    - Ensure at least 90% branch coverage.
+   - Ensure at least 90% branch coverage.
 
 3. Too Much Duplicate Code
 
-    I believe in the principle of "Don't Repeat Yourself" (DRY). All repeated code should be consolidated. In this service, communication with internal services happens over the public Internet, resulting in a lot of duplicated authentication code and other redundant elements. I’ll emphasize this part further in the following sections.
+   I believe in the principle of "Don't Repeat Yourself" (DRY). All repeated code should be consolidated. In this service, communication with internal services happens over the public Internet, resulting in a lot of duplicated authentication code and other redundant elements. I’ll emphasize this part further in the following sections.
 
 ### Misunderstanding of Microservices
 
 1. No Abstraction
 
-    To illustrate this, I’ll use a mail service as an example. If we need to integrate with multiple providers to offer a mail-sending feature to our public-facing service, what are the best practices? I believe it’s better to abstract the feature and provide a unified interface to other services, implementing third-party logic through polymorphism. However, this company created a separate microservice for each provider, leading to inconsistencies in DevOps and fragmentation of microservice management.
+   To illustrate this, I’ll use a mail service as an example. If we need to integrate with multiple providers to offer a mail-sending feature to our public-facing service, what are the best practices? I believe it’s better to abstract the feature and provide a unified interface to other services, implementing third-party logic through polymorphism. However, this company created a separate microservice for each provider, leading to inconsistencies in DevOps and fragmentation of microservice management.
 
 2. Reliance on One Centralized Service
 
-    Ideally, each microservice should have its own database and be able to operate independently. However, I found that all our microservices rely on a centralized service called `configure-registry`. For example, Server A calls Server B to create an account, then Server A saves account information in `configure-registry`. The next time Server B needs to retrieve Server A’s accounts, it must call `configure-registry`. This setup results in inefficiency and a single point of failure in the system.
-    
-    - Do not communicate by sharing memory; instead, share memory by communicating.
-    
+   Ideally, each microservice should have its own database and be able to operate independently. However, I found that all our microservices rely on a centralized service called `configure-registry`. For example, Server A calls Server B to create an account, then Server A saves account information in `configure-registry`. The next time Server B needs to retrieve Server A’s accounts, it must call `configure-registry`. This setup results in inefficiency and a single point of failure in the system.
+
+   - Do not communicate by sharing memory; instead, share memory by communicating.
 
 ### Outdated Infrastructure
 
@@ -55,16 +54,15 @@ I also discovered several outdated elements within the system. The absence of th
 
 1. No Staging Environment
 
-    A staging environment is crucial for testing new features and changes in an environment that closely mirrors production. Without it, there’s a higher risk of deploying untested code directly to production, which can lead to unexpected issues and downtime.
+   A staging environment is crucial for testing new features and changes in an environment that closely mirrors production. Without it, there’s a higher risk of deploying untested code directly to production, which can lead to unexpected issues and downtime.
 
 2. No CI/CD
 
-    Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for automating the testing and deployment process. Without CI/CD, the deployment process becomes manual, time-consuming, and prone to errors. This not only slows down the release cycle but also increases the likelihood of bugs making it into production.
+   Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for automating the testing and deployment process. Without CI/CD, the deployment process becomes manual, time-consuming, and prone to errors. This not only slows down the release cycle but also increases the likelihood of bugs making it into production.
 
 3. All Services Communicated Through the Public Internet
 
-    Having services communicate over the public Internet poses security risks and can lead to performance bottlenecks. Ideally, services should communicate over a secure, private network to ensure data integrity and reduce latency. This setup also minimizes the risk of data breaches and other security vulnerabilities.
-
+   Having services communicate over the public Internet poses security risks and can lead to performance bottlenecks. Ideally, services should communicate over a secure, private network to ensure data integrity and reduce latency. This setup also minimizes the risk of data breaches and other security vulnerabilities.
 
 ### When I Made This Decision
 
@@ -80,30 +78,29 @@ Given these factors, I made the decision to leave the company. While it wasn’t
 
 1. Know their products before the interview
 
-    When you receive an interview invitation, you can take the following steps to learn more about the company:
+   When you receive an interview invitation, you can take the following steps to learn more about the company:
 
-    - Check their website, LinkedIn, and Glassdoor reviews.
+   - Check their website, LinkedIn, and Glassdoor reviews.
 
 2. Ask Questions During the Technical Interview
 
-    You can ask direct questions at the end of the interview. Consider the following:
+   You can ask direct questions at the end of the interview. Consider the following:
 
-    - what's the current technology stack now.
+   - what's the current technology stack now.
 
-    - How many Devops and Developers in our team.
+   - How many Devops and Developers in our team.
 
-    - Who will I be working closely with on this job?
+   - Who will I be working closely with on this job?
 
-    - How do you monitor the program?
+   - How do you monitor the program?
 
-    - How do you test code?
+   - How do you test code?
 
-    - What do you do to integrate and deploy code changes? Do you use CI/CD?
+   - What do you do to integrate and deploy code changes? Do you use CI/CD?
 
-    - How do you prepare for failure recovery?
+   - How do you prepare for failure recovery?
 
-    - How long does it take you to set up a local test environment for your product? (minutes/hours/days)
-
+   - How long does it take you to set up a local test environment for your product? (minutes/hours/days)
 
 ### References
 
